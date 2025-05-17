@@ -29,8 +29,8 @@ def escape_for_elisp(s):
     s = s.replace("elregbackslashbackslash", "\\\\\\\\")  # \\ => \\\\
     s = s.replace("elregbacknewline", "\\n")  # \n => \n
     s = s.replace("elregescapeddot", "\\\\.")  # \. => \\.
-    s = s.replace("elregopencurly", "\\\\{")  # { => \{
-    s = s.replace("elregclosecurly", "\\\\}")  # } => \}
+    s = s.replace("elregopencurly", "\\\\{")  # { => \\{
+    s = s.replace("elregclosecurly", "\\\\}")  # } => \\}
     # print(s, file=sys.stderr)
     #     s = s.replace('(?:', '\\\\(?:')
     #     s = s.replace('(', '\\\\(').replace(')', '\\\\)')
